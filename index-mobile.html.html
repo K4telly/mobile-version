@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สุขสันต์วันเกิด, Earth!</title>
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffe5b4, #ffcccc);
+            height: 100vh;
+            color: #333;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        /* Estilo do container principal */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 15px;
+            max-width: 90%;
+            margin: 50px auto;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Ajustando o tamanho do título */
+            color: #e63950;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem; /* Ajustando o tamanho do texto */
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            color: #e63950;
+            font-weight: bold;
+        }
+
+        /* Decorações de borda e emojis */
+        .hearts {
+            position: absolute;
+            font-size: 1.5rem; /* Ajustando o tamanho dos corações */
+            color: #ff6699;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        .heart-1 { top: 10%; left: 15%; }
+        .heart-2 { top: 30%; right: 10%; animation-delay: 1s; }
+        .heart-3 { bottom: 15%; left: 20%; animation-delay: 2s; }
+        .heart-4 { top: 50%; right: 30%; animation-delay: 3s; }
+        .heart-5 { bottom: 20%; left: 50%; animation-delay: 4s; }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .flags {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .flag {
+            width: 50px;
+            height: 35px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            margin: 5px;
+        }
+
+        /* Decoração de aniversário */
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .balloon {
+            width: 50px; /* Ajustando o tamanho do balão */
+            height: 70px;
+            background: radial-gradient(circle, #ff6699 0%, #e63950 70%);
+            border-radius: 50% 50% 45% 45%;
+            margin: 10px;
+            display: inline-block;
+            animation: rise 6s infinite ease-in-out;
+        }
+
+        .balloon:nth-child(odd) { background: radial-gradient(circle, #ffcc00 0%, #ff8800 70%); }
+        .balloon:nth-child(even) { background: radial-gradient(circle, #66ccff 0%, #3366ff 70%); }
+
+        @keyframes rise {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-250px); }
+        }
+
+        .footer {
+            margin-top: 20px;
+            background-color: #e63950;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorações visuais -->
+    <div class="hearts heart-1">❤️</div>
+    <div class="hearts heart-2">💖</div>
+    <div class="hearts heart-3">💕</div>
+    <div class="hearts heart-4">💞</div>
+    <div class="hearts heart-5">💗</div>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>สุขสันต์วันเกิด, Earth! 🎉</h1>
+        <p>
+            วันนี้เป็นวันที่พิเศษ เพราะเราได้เฉลิมฉลอง <span class="highlight">คุณ</span> 
+            คนที่น่าทึ่ง เต็มไปด้วยความดี และศักยภาพที่ยังรอให้คุณก้าวไปถึง
+        </p>
+        <p>
+            ฉันได้ทุ่มเทเวลาและความตั้งใจ เพื่อสร้างคำอวยพรนี้ให้เป็นของขวัญจากใจ 
+            แสดงให้เห็นว่าฉันชื่นชมและให้ความสำคัญกับคุณมากแค่ไหน 
+            ขอให้คุณรับของขวัญชิ้นนี้ด้วยหัวใจที่เปิดกว้าง และจดจำไว้ว่าคุณพิเศษแค่ไหน 🌟
+        </p>
+        <p>
+            ขอให้ช่วงใหม่ในชีวิตของคุณเต็มไปด้วยการเรียนรู้ ความสุข 
+            และช่วงเวลาที่น่าจดจำ <span class="highlight">คุณสมควรได้รับสิ่งที่ดีที่สุดเสมอ!</span>
+        </p>
+
+        <!-- Bandeiras -->
+        <div class="flags">
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="ธงชาติบราซิล">
+            <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg" alt="ธงชาติไทย">
+        </div>
+        
+        <div class="footer">
+            ด้วยความปรารถนาดีจากใจ, Katelly 💌
+        </div>
+    </div>
+</body>
+</html>
